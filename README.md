@@ -23,7 +23,7 @@ java Rental
 ## How it works
 
 1. The program asks for a start time (0 to 23) and an end time (1 to 24).
-2. It checks the input. If the start or end is out of range, or the start is not before the end, it prints Invalid input! and stops.
+2. It checks the input. If the start or end is out of range, or the start is greater than end, it prints Invalid input! and stops.
 3. If the input is valid, a for loop goes through each hour from the start up to (but not including) the end.
 4. For each hour, it uses if / else if to find which price range the hour falls in, and adds that price to total.
 5. At the end it prints the total price to pay.
