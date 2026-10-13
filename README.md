@@ -31,24 +31,9 @@ java Rental
 ## Example runs
 
 Rent from 6 to 9:
-
 Enter start time (0 to 23): 6
 Enter end time (1 to 24): 9
 Totalprice to pay: 2500 RWF
-
-(500 for hour 6, then 1000 for hour 7 and 1000 for hour 8)
-
-Rent from 13 to 16:
-Enter start time (0 to 23): 13
-Enter end time (1 to 24): 16
-Totalprice to pay: 4000 RWF
-
-(1000 + 1500 + 1500)
-
-Rent the whole day, 0 to 24:
-Enter start time (0 to 23): 0
-Enter end time (1 to 24): 24
-Totalprice to pay: 21500 RWF
 
 Wrong input:
 Enter start time (0 to 23): 10
@@ -63,7 +48,6 @@ Invalid input! (It is invalid because the start time is greater than end time)
 # Mushroom Identification 
 
 This is a small Java program that guesses a mushroom. You think of one mushroom from a list of six, and the program asks you some yes or no questions until it finds which one it is.
-
 The six mushrooms are Agaric Jaunissant, Amanite Tue-mouche, Cepe de Bordeaux, Coprin Chevelu, Girolle and Pied Bleu.
 
 ## How to Run
@@ -72,8 +56,6 @@ The six mushrooms are Agaric Jaunissant, Amanite Tue-mouche, Cepe de Bordeaux, C
 2. Compile and run it from your terminal or command prompt:
 javac Mushroom.java
 java Mushroom
-
-*(Note: When answering the questions, make sure to type your answers in lowercase, like yes or no.)*
 
 ## How It Works
 How the program works
@@ -94,6 +76,16 @@ If the mushroom has both a ring and a cup, one question is not enough to know, s
 
 The last case is the else part, which happens when the mushroom has no ring and no cup. Here the program asks: "Does your mushroom have gills?" and saves the answer in a variable called gills. If the answer is yes, the mushroom is Girolle. If it is no, the mushroom is Cepe de Bordeaux.
 So the program never asks more than three questions, and every path ends with one mushroom name printed on the screen.
+Note:But when you are entering answer make sure you enter yes or no in small letters.
+
+**Example run**
+
+Think of one of the 6 mushroom(Agaric Jaunissant,Amanite Tue-mouche, Cepe de Bordeaux, Cprin Chivelu, Gillore, Pied Bleu).
+Answer yes or no
+Does your mushroom have a ring? no
+Does your mushroom have a convex cup? no
+Does your mushroom have gills? yes
+Your mushroom is Girolle
 
 Name: Iragena Ruweli Promesse
 Reg N:225075966
